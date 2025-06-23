@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Achat en ligne</title>
+    <style>
+        body{
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+header{
+    background: #f0f0f0;
+    color: pink;
+    padding: 20px;
+    text-align: center;
+}
+nav a{
+    color: pink; 
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+main{
+    padding: 20px; 
+    max-width: 800px;
+    margin: auto; 
+    background: pink;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+footer{
+    text-align: center;
+    padding: 15px;
+    background: #eee;
+    margin-top: 40px;
+    color: #666;
+    font-size: 0.9em;
+}
+    </style>
+</head>
+<body>
+   <header>
+       <h1>Bienvenue sur mon site web</h1>
+       <form>
+           <label for="Nom">Nom</label>
+           <input type="text" id="Nom" name="Nom"/>
+           <input type="submit" value="envoyer"/> 
+       </form>
+       <nav>
+           <a href="#accueil">accueil</a>
+           <a href="#apropos">apropos</a>
+           <a href="#contact">contact</a>
+       </nav>
+   </header>
+   <main>
+       <section id="accueil">
+           <h2>accueil</h2>
+           <p>Mon nom est Gahé Kem je découvre le développement web.<br/><mark>Je suis nouveau dans le milieu de la programmation</mark></p>
+       </section>
+       <section id="apropos">
+            <h2>apropos</h2>
+            <p>Mon nom est Gahé Kem je découvre le développement web</p>
+       </section>
+       <section id="contact">
+            <h2>contact</h2>
+            <p>vous pouvez me contacter à travers cet email : <a href="mailto:yvanngahe02@gmail.com">yvanngahe02@gmail.com</a></p>
+        </section>
+   </main>
+   <footer>
+       &copy; 20/06/2025 Achat en ligne 
+   </footer>
+   <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Merci pour votre envoi !');
+    });
+</script>
+</body>
+</html>
